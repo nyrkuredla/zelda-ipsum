@@ -25,5 +25,5 @@ app.set('port', 3000)
 
 //listening at port and console log start
 app.listen(app.get('port'), function () {
-  console.log('Application has sterted at port 3000, yay!')
+  console.log('Application has started at port 3000, yay!')
 })
