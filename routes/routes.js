@@ -8,6 +8,7 @@ router
     res.render('ipsum')
   })
 
+//rendering paragraphs on main page
   .post(function(req, res) {
     const totalText = dal.countParagraphs(req.body.number);
     res.render('ipsum', {text: totalText})

@@ -1,14 +1,12 @@
 /*colors:
 
 green: #248810 (37, 136, 16)
-red: #9D1320 (157, 19, 32)
-orange: #A34F13 (163, 79, 19)
-blue: #0C665A (12, 102, 90)
-brown: #84310D (132, 48, 13)
-dark blue: #0E3555 (14, 53, 85)
-
 
 */
+
+/*Google fonts: 'Love Ya Like A Sister', 'Lato'*/
+
+/*background image from http://p1.pichost.me/i/40/1639586.jpg*/
 
 body {
   background-image: url("/images/hyrule-field.jpg");
