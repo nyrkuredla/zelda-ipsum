@@ -37,3 +37,9 @@ div.output {
 input {
   font-family: 'Love Ya Like A Sister', cursive;
 }
+
+/*Navi styles*/
+
+body.navi {
+  background-image: url('images/navi-wallpaper.jpg');
+}

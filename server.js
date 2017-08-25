@@ -21,9 +21,7 @@ app.use(bodyParser.urlencoded( {extended: false}))
 app.use('/', routes)
 
 //setting the port
-app.set('port', 3000)
-
-//listening at port and console log start
-app.listen(app.get('port'), function () {
-  console.log('Application has started at port 3000, yay!')
+//starting up server
+app.listen(3000, function () {
+  console.log('Server is serving on port 3000! Get your server here!')
 })

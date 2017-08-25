@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 {{>_head}}
-<body>
-  <audio id="audio" src="/sounds/OOT_Get_Heart.wav"></audio>
+<body class="navi">
   <div class="container">
     <div class="page-header">
-      <h1>Zelda Ipsum <small>by Ryan Kelley</small></h1>
-      <p>Feeling a bit masonostalgic? <a href="/navi">Navi Ipsum</a> is here for you.</p>
+      <h1><del>Zelda</del> Navi Ipsum <small>by Ryan Kelley</small></h1>
     </div>
-    <p class="lead">Need a bit of adventure? Take this.</p>
+    <p class="lead">Need a bit of <del>adventure</del> annoyance? Take this.</p>
+    <p>Fed up? Of course! No one will blame you for going back to <a href="/">Zelda Ipsum</a> instead.</p>
     <div class="form-container">
-      <form class="ipsum-form form-inline" action="/" method="post">
+      <form class="ipsum-form form-inline" action="/navi" method="post">
         <select class="form-control" name="number">
           <option value="">How many paragraphs do you want?</option>
           <option value="1">1</option>
@@ -19,7 +18,7 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-        <input type="submit" name="submit" value="HYAH!">
+        <input type="submit" name="submit" value="HEY!">
       </form>
       <div class="output-wrapper">
         {{#text}}
@@ -30,6 +29,7 @@
         {{^text}}
         {{/text}}
       </div>
+
     </div>
   {{>_scripts}}
 </body>
