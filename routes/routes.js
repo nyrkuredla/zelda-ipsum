@@ -3,7 +3,7 @@ const router = express.Router();
 const dal = require('../dal');
 
 router
-  .route('/')
+  .route('/index.html')
   .get(function (req, res) {
     res.render('ipsum')
   })

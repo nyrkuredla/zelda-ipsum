@@ -4,6 +4,9 @@ const mustacheExpress = require('mustache-express');
 const dal = require('./dal');
 const routes = require('./routes/routes');
 const bodyParser = require('body-parser');
+const firebase = require('firebase');
+
+
 
 //setting up mustache
 app.engine('mustache', mustacheExpress())

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./public/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Love+Ya+Like+A+Sister" rel="stylesheet">
+  <title>Zelda Ipsum</title>
+</head>
+<body>
+  <audio id="audio" src="/sounds/OOT_Get_Heart.wav"></audio>
+  <div class="container">
+    <div class="page-header">
+      <h1>Zelda Ipsum <small>by Ryan Kelley</small></h1>
+      <p>Feeling a bit masonostalgic? <a href="/navi">Navi Ipsum</a> is here for you.</p>
+    </div>
+    <p class="lead">Need a bit of adventure? Take this.</p>
+    <div class="form-container">
+      <form class="ipsum-form form-inline" action="/" method="post">
+        <select class="form-control" name="number">
+          <option value="">How many paragraphs do you want?</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="submit" name="submit" value="HYAH!">
+      </form>
+      <div class="output-wrapper">
+
+          <div class="output">
+            <p id="zeldaText"></p>
+          </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD1XQvg7rHt-wks2zl3MXLWW7C5VHL6BP8",
+        authDomain: "zeldaipsum.firebaseapp.com",
+        databaseURL: "https://zeldaipsum.firebaseio.com",
+        projectId: "zeldaipsum",
+        storageBucket: "",
+        messagingSenderId: "863766691268"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./dal.js">
+      const submit = document.querySelector('input');
+      const zeldaText = document.getElementById('zeldaText');
+
+
+    </script>
+</body>

@@ -31,5 +31,28 @@
         {{/text}}
       </div>
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD1XQvg7rHt-wks2zl3MXLWW7C5VHL6BP8",
+    authDomain: "zeldaipsum.firebaseapp.com",
+    databaseURL: "https://zeldaipsum.firebaseio.com",
+    projectId: "zeldaipsum",
+    storageBucket: "zeldaipsum.appspot.com",
+    messagingSenderId: "863766691268"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/__/firebase/4.3.0/firebase-app.js"></script>
+   <script src="/__/firebase/4.3.0/firebase-auth.js"></script>
+   <script src="/__/firebase/4.3.0/firebase-database.js"></script>
+   <script src="/__/firebase/4.3.0/firebase-messaging.js"></script>
+
+   <!-- Leave out Storage -->
+   <!-- <script src="/__/firebase/4.3.0/firebase-storage.js"></script> -->
+
+   <script src="/__/firebase/init.js"></script>
   {{>_scripts}}
 </body>
